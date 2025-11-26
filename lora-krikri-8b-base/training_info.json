@@ -1,0 +1,7 @@
+{
+  "model_name": "Krikri-8B-Base",
+  "training_type": "LoRA fine-tuning",
+  "dataset": "Natural prompts (dialects only)",
+  "timestamp": "20250909_173712",
+  "persistent_location": "/home/sagemaker-user/krikri_natural_lora_20250909_173712"
+}

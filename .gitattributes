@@ -1,0 +1,18 @@
+# Git LFS configuration for large model files
+# Install Git LFS first: git lfs install
+
+# Model weights and checkpoints
+*.safetensors filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
+*.ckpt filter=lfs diff=lfs merge=lfs -text
+
+# Large dataset files (optional - you may want to exclude these entirely)
+*.jsonl filter=lfs diff=lfs merge=lfs -text
+*.parquet filter=lfs diff=lfs merge=lfs -text
+
+# Training optimizer states (should be excluded, but if included, use LFS)
+**/checkpoint-*/optimizer.pt filter=lfs diff=lfs merge=lfs -text
+**/checkpoint-*/scheduler.pt filter=lfs diff=lfs merge=lfs -text
+

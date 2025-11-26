@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model files - use Git LFS for these
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Large dataset files
+*.jsonl
+*.parquet
+*.arrow
+
+# Logs
+*.log
+*.out
+
+# Training checkpoints (keep only final models)
+**/checkpoint-*/optimizer.pt
+**/checkpoint-*/scheduler.pt
+**/checkpoint-*/rng_state.pth
+**/checkpoint-*/training_args.bin
+
+# Hugging Face cache
+.cache/
+hf_cache/
+transformers_cache/
+
+# Environment variables
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
+nohup.out
+
