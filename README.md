@@ -66,7 +66,7 @@ pip install transformers peft torch
 
 ## 📄 License
 
-This work is licensed under a free-to-use license. You are free to use, modify, and distribute these models for research and commercial purposes.
+This work is licensed for **research purposes only**. You are free to use, modify, and distribute these models for research purposes. Commercial use is not permitted.
 
 ## 🙏 Acknowledgments
 
